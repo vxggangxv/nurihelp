@@ -1,22 +1,37 @@
 /* css 초기화 */
-@import url(http://static.nurifunding.co.kr/css/reset.css);
-body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
-body {background: #f5f5f5; color: #333;}
+@import url(reset.css);
+body, * {margin:0; padding:0; font-family: 'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -0.75px;}
+body {color: #202020;}
 button {cursor: pointer; border: none; background: none;}
-a {text-decoration:none; color: #434343;}
+a {text-decoration:none; color: #202020;}
+em {font-weight: 700;}
+strong {font-weight: 800;}
 
 /*폰트 색상*/
-.bg-blue {background-color: #398fe1;}
-.c-gray, .fc-gray {color: #ccc;}
-.c-blue, .fc-blue {color: #398fe1;}
-.c-white, .fc-white {color: #fff;}
-.c-orange, .fc-orange {color: #ff9a16;}
+.bg-yellow {background-color: #ffb411;}
+.c-gray1 {color: #4c4c4c;}
+.c-gray2 {color: #656161;}
+.c-white  {color: #fff;}
+.c-yellow {color: #ffb411;}
+.c-red {color: #db1010;}
+
+/*폰트 굵기*/
+.f-semibold {font-weight: 600;}
+.f-bold {font-weight: 500;}
+.f-italic {font-style: italic;}
 
 /*폰트 정렬*/
 .align-left {text-align: left;}
 .align-right {text-align: right;}
 .align-center {text-align: center;}
 .td-under {text-decoration: underline;}
+
+/*정렬*/
+.center-block {display: block; margin-right: auto; margin-left: auto;}
+.pull-right {float: right;}
+.pull-left {float: left;}
+.clearfix:before, .clearfix:after {display: block; content: "";}
+.clearfix:after {clear: both;}
 
 /* 캔버스 커스타미이징 */
 canvas {
@@ -33,110 +48,60 @@ canvas {
 .nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
 .nr-radio:checked, .nr-check:checked {background-color: #fff;}
 
-
-/* 공통속성 css */
+/* 드롭다운박스 css */
 .dropdown {position: relative;}
-.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none;}
-.dropdown .btn span {position: relative; font-size: 10px; color: #398FE2;}
+.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none; height: 100%;}
+.dropdown .btn span {position: relative; font-size: 10px; color: #ffb412;}
 .dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
-.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
-.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em; font-size: 1em;}
+/*.dropdown .dropdown-menu li a:hover {color: #ffb412;}*/
 
 hr {border: none; border-top: 1px solid #ddd;}
 /*jquery컴포넌트 공통 속성*/
 
-/* 색상 */
-.c-blue {color: #398FE2;}
-
 /*전체*/
-.wrap {position: relative; width: 100%;}
-.contents {position: relative;}
-.main {position: relative;}
-.section:before, .section:after {content: ""; display: block;}
-.section:after {clear: both;}
+.wrap {position: relative; width: 100%; min-width: 1100px;}
+.header, .footer, .container, .contents, section {position: relative;}
+section:before, section:after {content: ""; display: block;}
+section:after {clear: both;}
 
-/*모바일 영역*/
-@media (max-width: 767px){
-  .header {background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
-  .header-box {width: 300px; position: relative; top: 18px;}
-  .header-box > div {position: relative; clear: both; width: 100%;}
-  .navbar-header {top: -10px;}
-  .navbar-header h2 {text-align: center;}
-  .navbar-brand {position: relative; display: inline-block; width: 140px; top: 2px;}
-  .navbar-brand img {width: 100%;}
-  
-  .nav-tab {position: absolute; left: 0px; top: 6px;}
-  .nav-tab .icon-bar {display: block; width: 20px; height: 2px; background: #000;}
-  .nav-tab .b2,.nav-tab .b3 {margin-top: 5px;}
-  
-  .my-tab {position: absolute; right: 0px; top: 4px; width: 16px; height: 22px;}
-  .my-tab img {width: 100%;}
-  
-  .mlnb-wrap {display: none !important; position: fixed; z-index: 1; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.819);}
-  .mlnb-wrap.on {display: block !important;}
-  .mlnb-container {position: absolute; top: 0; left: 0px; width: 280px; height: 100%; background: #fff;}
-  .mlnb-header {background: #398fe1; padding: 15px 20px 30px 20px;}
-  .mh-logo img {width: 150px}
-  .mlnb-header .cls-btn {position: relative; top: 0px; float: right;}
-  .mlnb-header .cls-btn img {width: 26px;}
-  
-  .t-box {margin-top: 30px; color: #fff; font-size: 14px; line-height: 1.5em;}
-  .t-box p, .t-box a {letter-spacing: 0;}
-  .t-box p.nth-3 {margin-top: 10px;}
-  .t-box a {display: inline-block; color: #fff; width: 80px; padding: 3px 0; text-align: center; border: 1px solid #fff;}
-  .t-box a.nth-2 {margin-left: 5px;}
-  
-  .mlnb {}
-  .mlnb > li {position: relative; border-bottom: 1px solid #ddd;}
-  .mlnb > li > a { display: block; padding: 15px 20px 15px 20px; color: #333; letter-spacing: 0;}
-  .mlnb > li > a > img {position: absolute; width: 9px;  right: 20px; top: 16px;}
-  .mlnb > li:hover .m-sub-nav {display: block;}
-  
-  .m-sub-nav {display: none; position: relative; width: 100%; border-top: 1px solid #ddd; background: #fff; padding: 15px 0;}
-  .m-sub-nav a {width: 242px; display: block; margin: 0 auto; font-size: 15px; padding: 10px 0; border-bottom: 1px dotted #e0e0e0;}
-  .m-sub-nav a:hover, .sub-nav a:active {color: #398fe1;}
-  
-  .footer {padding: 40px 0; background: #282828; margin-top: 0;}
-  .footer .a-txt, .footer .f-txt, .footer .c-txt {width: 300px; margin: 0 auto; margin-top: 15px; color: #b4b4b4;}
-  .footer .c-txt {margin-top: 10px;}
-  .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
-  .footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3; font-size: 15px;}
-  .footer .a-txt > a:first-child {margin-left: 0;}
-  .footer .f-txt address {display: inline; font-size: 12px; line-height: 1.5em;}
-  .footer .c-txt small {font-size: 11px;}
-  .fc-yellow {color: #ffea00;}
-  
-  .footer .f-txt .xs-br {display: block;}
-}
-/*테블릿 & PC영역*/
-@media (min-width: 768px){
-  .header, .sub-nav {z-index: 11;}
-  .header {background: #fff; border-bottom: 1px solid #ddd; height: 90px;}
-  .header-box {position: relative; top: 34px;}
-  .header-box > div {position: relative; float: left;}
-  .navbar-header {top: -10px;}
-  .navbar-brand {position: relative; display: inline-block; width: 216px;}
-  .navbar-brand img {width: 216px;}
+/*공통*/
+.mlr {display: inline-block;position: relative; width: 1px; height: 12px; background: #8f8f8f;}
 
-  .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
-  .main-nav > li {position: relative; float: left; font-size: 18px; margin-left: 20px;}
-  .main-nav > li:first-child {margin-left: 0;}
-  .main-nav > li:hover .sub-nav {opacity: 1; filter: alpha(opacity=100); visibility: visible; margin-top: 10px; transition: all 1s;}
-  
-  .sub-nav {opacity: 0; filter: alpha(opacity=100); visibility: hidden; position: absolute; width: 120px; left: 50%; margin-top: 0px; margin-left: -60px; border: 1px solid #eaeaea; background: #fff; padding-bottom: 15px;}
-  .sub-nav a {width: 100%; display: block; text-align: center; margin-top: 15px; font-size: 15px; color: #545454;}
-  .sub-nav a:hover, .sub-nav a:active {color: #398fe1;}
+/*헤더영역*/
 
-  .footer {padding: 40px 0; background: #282828; color: #b4b4b4; margin-top: 0;}
-  .footer .a-txt, .footer .f-txt {margin-top: 15px;}
-  .footer .c-txt {margin-top: 10px;}
-  .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
-  .footer .a-txt > a {display: inline-block; margin-left: 20px; color: #d3d3d3}
-  .footer .a-txt > a:first-child {margin-left: 0;}
-  .footer .f-txt address {display: inline; font-size: 14px; line-height: 1.5em;}
-  .footer .c-txt small {font-size: 12px;}
-  .fc-yellow {color: #ffea00;}
-  
-  .main-nav .hidden-margin {height: 20px;}
-  .footer .f-txt .min-xs-br {display: block;}
-}
+
+.header {position: relative; width: 100%; background: #F0F0F0; border-bottom: 1px solid #bfbfbf;}
+.header-box {position: relative; width: 1100px; height: 36px;}
+.header-box ul li {float: left;}
+.hb-tab, .hb-user {position: absolute;}
+.hb-tab {left: 0; top: 0;}
+.hb-tab li a {display: block; color: #4c4c4c; font-weight: 500; padding: 0 15px; height: 37px; line-height: 2.3em; letter-spacing: 0; font-size: 15px;}
+.hb-tab li.on a {color: #ffb412; font-weight: 600; background: #fff; border-left: 1px solid #bfbfbf; border-right: 1px solid #bfbfbf;}
+.hb-user {right: 0; top: 0;}
+.hb-user li.mlr {margin-right: 12px; margin-left: 12px; top: 12px;}
+.hb-user li a {color: #656161; font-size: 15px; height: 36px; line-height: 2.3em; font-weight: 300;}
+
+
+/*푸터영역*/
+.footer {width: 100%; background: #141414; padding: 30px 0;}
+.footer-box {position: relative; width: 1100px;}
+.footer-box ul {width: 1100px; padding-left: 120px;}
+.footer-box li {float: left; color: #ccc;}
+.footer-box li.mlr {display: inline-block;position: relative; top: 3px; margin-left: 25px; margin-right: 25px; width: 1px; height: 12px; background: #8f8f8f;}
+.footer-box li a {color: #ccc;}
+.footer-box div {float: left; margin-top: 20px;}
+.footer-box div.nth-1 {color: #ccc; width: 75px; text-align: center; font-size: 20px; font-weight: 600; line-height: 1.2em; margin-top: 22px; margin-right: 45px;}
+.footer-box div.nth-2 {color: #ccc;}
+.footer-box address p {font-size: 15px; letter-spacing: 0; line-height: 1.45em;}
+.footer-box address p.last {font-size: 14px; letter-spacing: 0;}
+.footer-box address span.mlr {display: inline-block;position: relative; top: 1px; margin-left: 15px; margin-right: 15px; width: 1px; height: 12px; background: #8f8f8f;}
+.footer-box div.nth-3 {position: absolute; right: 0; top: 0px; width: 350px; height: 75px; border: 2px solid #ffb412; display: table;}
+.footer-box div.nth-3 p {display: table-cell; vertical-align: middle;}
+.footer-box div.nth-3 p.nth-1 {width: 90px; font-size: 19px; font-weight: 500; line-height: 1.4em; text-align: right;}
+.footer-box div.nth-3 p.nth-2 {font-size: 36px; text-align: center;}
+
+
+
+
+
