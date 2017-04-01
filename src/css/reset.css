@@ -52,4 +52,4 @@ img{ max-width:100%; }/*ipad사이즈에서 userlogin 의 title등 %로 된  것
 li img, dd img { vertical-align:top; }
 input { vertical-align:middle; }
 
-#skip, .skip { font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px; }
+#skip, .skip {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
