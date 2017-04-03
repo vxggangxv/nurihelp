@@ -120,11 +120,11 @@ section[class*="service-sec"] div[class*="sb-box"] {width: 814px; height: 466px;
 .rb-u1 .post h4 {font-size: 20px;}
 .rb-u1 .post .mtb{width: 40px; height: 2px; margin-top: 15px; margin-bottom: 15px; background: #000;}
 .rb-u1 .post .txt {line-height: 1.4em;}
-.rs_slide_btn {position: absolute; width: 100%; top: 50%; margin-top: -18px;}
-.rs_slide_btn span {position: absolute; display: block; width: 16px; height: 36px;}
+.rs-slide-btn {position: absolute; width: 100%; top: 50%; margin-top: -18px;}
+.rs-slide-btn span {position: absolute; display: block; width: 16px; height: 36px;}
 
-.rs_slide_btn #slider-prev {background: url(../img/slide_btn.png) no-repeat 0px; left: 0; }
-.rs_slide_btn #slider-next {background: url(../img/slide_btn.png) no-repeat -50px 0px; right: 0;}
+.rs-slide-btn #slider-prev {background: url(../img/slide_btn.png) no-repeat 0px; left: 0; }
+.rs-slide-btn #slider-next {background: url(../img/slide_btn.png) no-repeat -50px 0px; right: 0;}
 
 
 /********************************** 법인등기 ********************************/
@@ -144,7 +144,7 @@ section[class*="2-sec"] div[class*="2-box"] {position: relative; width: 1100px; 
 .ms2b-money p.nth-3 {margin-top: 28px;}
 .ms2b-money p.nth-3 a {font-weight: 500; font-size: 30px; padding: 15px 0px; display: inline-block; border: 1px solid #ffb411; width: 310px; height: 62px;}
 .ms2-total {position: absolute; bottom: 0; width: 100%; height: 64px;}
-.ms2-total p {position: relative; float: left; width: 50%; height: 100%; background: url(../img/black_rgba70.png) repeat; font-size: 23px; line-height: 2.66em;}
+.ms2-total p {position: relative; float: left; width: 50%; height: 100%; background: url(../img/black_rgba70.png) repeat; font-size: 23px; line-height: 2.68em;}
 .ms2-total p.nth-1 {text-align: right; padding-right: 70px;}
 .ms2-total p.nth-2 {text-align: left; padding-left: 70px;}
 .ms2-total p.nth-2:before {position: absolute; left: 0; top:15px; content: ""; display: block; width: 1px; height: 36px; background: #565656;}
@@ -155,7 +155,7 @@ section[class*="cheap2-sec"] div[class*="cs2-box"] {width: 846px;}
 .cs2b-u1 {position: relative;}
 .cs2b-u1 h3 {font-size: 32px; text-align: center; margin-top: 35px; margin-bottom: 35px; font-weight: 500;}
 .cs2b-u1 li {float: left;; border: 1px solid #bfbfbf; padding: 0 50px;}
-.cs2b-u1 li.nth-0 {position: absolute; top: 50%; left: 50%; margin-top: -46px; margin-left: -59.5px; width: 119px; height: 92px; background: url(../img/2_3prc.jpg) no-repeat;}
+.cs2b-u1 li.nth-0 {position: absolute; top: 50%; left: 50%; margin-top: -46px; margin-left: -59.5px; width: 119px; height: 92px; background: url(../img/2_3prc.jpg) no-repeat; border: none;}
 .cs2b-u1 li.nth-1, .cs2b-u1 li.nth-2 {width: 414px; height: 316px;}
 .cs2b-u1 li.nth-1 {margin-right: 18px;}
 .cs2b-u1 li.nth-2 {background: #FDEFD4;}
@@ -169,4 +169,60 @@ section[class*="cheap2-sec"] div[class*="cs2-box"] {width: 846px;}
 .cs2b-u1 li p.nth-5 {font-family: Verdana, "Noto Sans Kr"; font-weight: 600; letter-spacing: 0; font-size: 26px;}
 .cs2b-ps {text-align: right; margin-top: 6px; font-size: 15px; letter-spacing: 0;}
 
-.cert-sec {height: 312px; background: #e6e6e6;}
+.cert2-sec {height: 312px; background: #e6e6e6;}
+section[class*="cert2-sec"] h2, .cts-box {padding-left: 5px;}
+section[class*="cert2-sec"] h2 {width: 1100px; margin: 0px auto; text-align: left; margin-bottom: 45px; padding-top: 72px;}
+.cts2-box {}
+.cts2b-p1 {font-size: 24px; line-height: 1.5em; font-weight: 400;}
+.cts2b-u1 {position: absolute; left: 610px; bottom: 0px;}
+.cts2b-l1 {float: left; width: 173px; height: 173px; text-align: center; font-size: 30px; background: #fff; padding-top: 56px; line-height: 1.2em;}
+.cts2b-l1 em {display: block;}
+.cts2b-l1.nth-2 {margin-left: 24px;}
+
+.time2-sec {height: 769px; background: url(../img/tes_bg.jpg) center;}
+.time2-sec h2 {margin-bottom: 30px; color: #fff;}
+.tes2-p1 {text-align: center; color: #fff; line-height: 1.25em; font-size: 30px; margin-bottom: 60px;}
+.tes2-box {}
+.tes2b-u1 {text-align: center;}
+.tes2b-l1 {display: inline-block; width: 519px; height: 289px; border: 3px solid #ffb411; vertical-align: text-top; text-align: left; color: #fff; padding: 40px;}
+.tes2b-l1.nth-2 {margin-left: 50px;}
+.tes2b-l1 h3 {font-size: 30px; margin-bottom: 35px; line-height: 1.23em;}
+.tes2b-l1 h3 em {display: block;}
+.tes2b-l1 p {font-size: 20px; line-height: 1.2em; font-weight: 300;}
+.tes2-p2 {margin-top: 50px;}
+.tes2-p2 .btn {width: 394px; height: 65px; font-size: 28px; padding-top: 17.5px; font-weight: 500;}
+
+.progress2-sec {height: 610px;}
+.progress2-sec h2 { margin-bottom: 80px;}
+.ps2-box {height: 346px; background: url(../img/ps2_bg.jpg) center;}
+.ps2-u1 {}
+.ps2-l1 {float: left; width: 212px; height: 169px; text-align: center;}
+.ps2-l1.nth-2 {margin-left: 10px; width: 215px;}
+.ps2-l1.nth-3 {margin-left: 12px; width: 212px;}
+.ps2-l1.nth-4 {margin-left: 11px; width: 238px;}
+.ps2-l1.nth-5 {margin-left: 12px; width: 176px;}
+.ps2-l1 h3 {margin-top: 60px; font-size: 24px; margin-bottom: 12px; line-height: 1.2em}
+.ps2-l1 h3.mt {margin-top: 30px;}
+.ps2-l1 p {line-height: 1.4em; color: #656161; font-size: 18px;}
+
+.service2-sec {height: 700px; background: url(../img/ss2_bg.jpg) center;}
+.service2-sec h2 {margin-bottom: 70px; color: #fff;}
+.ss2b-u1 {width: 948px; margin: 0 auto;}
+.ss2b-l1 .post {float: left; width: 302px; height: 187px; background: #fff; margin-left: 10px; margin-top: 10px; text-align: center;}
+.ss2b-l1 .post h3 {font-size: 20px; padding-top: 35px;}
+.ss2b-l1 .post .mtb {width: 120px; height: 1px; margin: 20px auto; background: #bfbfbf;}
+.ss2b-l1 .post .ss2b-p1 {font-size: 18px; color: #8d8d8d; line-height: 1.25em;}
+.ss2b-l1 .post .ss2b-p1.date {margin-top: -5px;}
+.ss2-slide-btn {position: absolute; width: 100%; top: 50%; margin-top: -18px;}
+.ss2-slide-btn span {position: absolute; display: block; width: 16px; height: 36px;}
+.ss2-slide-btn #slider-prev {background: url(../img/slide_btn.png) no-repeat -100px; left: 0; }
+.ss2-slide-btn #slider-next {background: url(../img/slide_btn.png) no-repeat -150px 0px; right: 0;}
+
+.solution2-sec {background: #FEC039; height: 328px;}
+section[class*="solution2-sec"] h2, .snc2-box {padding-left: 5px;}
+section[class*="solution2-sec"] h2 {width: 1100px; margin: 0px auto; text-align: left; padding-top: 72px; font-weight: 700;}
+.snc2-box {padding-top: 40px;}
+.snc2b-p1 {font-size: 26px; line-height: 1.2em;}
+.snc2b-p2 {font-size: 30px; margin-top: 12px; font-weight: 500;}
+.snc2b-p3 {position: absolute; right: 0; top: 10px;}
+.snc2b-p3 .btn {display: block; width: 354px; height: 88px; font-size: 30px; font-weight: 600; line-height: 2.9em;}

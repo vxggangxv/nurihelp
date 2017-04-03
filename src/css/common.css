@@ -6,9 +6,14 @@ button {cursor: pointer; border: none; background: none;}
 a {text-decoration:none; color: #202020;}
 em {font-weight: 700;}
 strong {font-weight: 800;}
+i {font-style: italic;}
+
+/*둥근경계*/
+.br50 {border-radius: 50%;}
 
 /*폰트 색상*/
 .bg-yellow {background-color: #ffb411;}
+.bg-white {background-color: #fff;}
 .c-gray1 {color: #4c4c4c;}
 .c-gray2 {color: #656161;}
 .c-white  {color: #fff;}
@@ -16,8 +21,8 @@ strong {font-weight: 800;}
 .c-red {color: #db1010;}
 
 /*폰트 굵기*/
-.f-semibold {font-weight: 600;}
-.f-bold {font-weight: 500;}
+.f-semibold {font-weight: 500;}
+.f-bold {font-weight: 600;}
 .f-italic {font-style: italic;}
 
 /*폰트 정렬*/
@@ -62,6 +67,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 /*전체*/
 .wrap {position: relative; width: 100%; min-width: 1100px;}
 .header, .footer, .container, .contents, section {position: relative;}
+section {width: 100%;}
 section:before, section:after {content: ""; display: block;}
 section:after {clear: both;}
 
