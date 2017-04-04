@@ -76,8 +76,6 @@ section:after {clear: both;}
 .mlr {display: inline-block;position: relative; width: 1px; height: 12px; background: #8f8f8f;}
 
 /*헤더영역*/
-
-
 .header {position: relative; width: 100%; background: #F0F0F0; border-bottom: 1px solid #bfbfbf;}
 .header-box {position: relative; width: 1100px; height: 36px;}
 .header-box ul li {float: left;}
@@ -108,7 +106,26 @@ section:after {clear: both;}
 .footer-box div.nth-3 p.nth-1 {width: 90px; font-size: 19px; font-weight: 500; line-height: 1.4em; text-align: right;}
 .footer-box div.nth-3 p.nth-2 {font-size: 36px; text-align: center;}
 
-
-
-
-
+/*공통페이지 css*/
+/* 네비게이션영역 */
+.top-wrap {width: 100%; border-bottom: 1px solid #bfbfbf;}
+.top-box {position: relative; width: 1100px; height: 83px;}
+.top-box h2 {position: absolute; left: 13px; top: 31px;}
+.top-box h2 a {font-size: 21px; font-weight: 500; color: #4c4c4c;}
+.top-box nav {position: absolute; right: 0;}
+.tb-nav {position: relative; top: 14.5px;}
+.tb-nav li {display: inline-block; margin-left: 40px;}
+.tb-nav li:first-child {margin-left: 0;}
+.tb-nav li a {font-size: 18px; font-weight: 600; letter-spacing: 0;}
+.tb-nav li.btn-wrap {margin-left: 50px;}
+.tb-nav li.btn-wrap a {display: block; width: 200px; height: 53px; line-height: 2.5em; font-size: 20px; font-weight: 500; color: #ffb411; border: 1px solid #ffb411;}
+.tb-nav li.btn-wrap a:hover {color: #fff; background: #ffb411;}
+/*간편하게해결*/
+.solution2-sec {background: #FEC039; height: 328px;}
+section[class*="solution2-sec"] h2, .snc2-box {position: relative; width: 1100px; margin: 0 auto; padding-left: 5px;}
+section[class*="solution2-sec"] h2 {width: 1100px; margin: 0px auto; text-align: left; padding-top: 72px; font-weight: 700; font-size: 42px; font-weight: 500; letter-spacing: 0.7px;}
+.snc2-box {padding-top: 40px;}
+.snc2b-p1 {font-size: 26px; line-height: 1.2em;}
+.snc2b-p2 {font-size: 30px; margin-top: 12px; font-weight: 500;}
+.snc2b-p3 {position: absolute; right: 0; top: 10px;}
+.snc2b-p3 .btn {display: block; width: 354px; height: 88px; font-size: 30px; font-weight: 600; line-height: 2.9em;}
