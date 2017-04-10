@@ -1,11 +1,15 @@
 $(function() {
-  /*모바일 바 클릭시 모바일 네비게이션 등장*/
-  $(".header .nav-tab").on("click", function() {
-    $("#mlnb-wrap").addClass("on");
+  /*체크박스*/
+  $('.chk_box').click(function(){
+    if ($(this).prop('checked'))
+    {
+      $(this).addClass('on');
+    }else {
+      $(this).removeClass('on');
+    }
   });
-  /*모바일 네비게이션 닫기 버튼*/
-  $("#mlnb-wrap .cls-btn").on("click", function() {
-    $("#mlnb-wrap").removeClass("on");
+  /*레이어팝업 닫기*/
+  $('.layer_pop .pop_area .pop_close').click(function(){
+    $(this).parents('.layer_pop').hide();
   });
-
 });
