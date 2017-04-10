@@ -1,9 +1,44 @@
-section[class*="-sec"] > div[class*="-box"] {position: relative; width: 1100px; margin-left: auto; margin-right: auto;}
+@charset "utf-8";
 
-.gh2 {font-size: 44px; padding-top: 60px; padding-bottom: 75px; font-weight: 600; text-align: center;}
+.gh2 {font-size: 44px; padding-top: 55px; padding-bottom: 55px; font-weight: 600; text-align: center;}
 
-.in-house-sec {}
-.in-house-sec .lnb-box {}
-.ihs-box > h3 {font-size: 30px; margin-bottom: 12px;}
-.ihs-box > h3 span {margin-left: 20px; font-size: 16px; color: #8d8d8d; font-family: "NanumBarunGothic", "Nanum Gothic", "Malgun Gothic", sans-serif;}
-.ih-prc-box {height: 401px; border: 1px solid #d2d2d2;}
+/*본관이전 - 관내*/
+.in-house-sec {width: 1100px; margin: 0 auto;}
+.in-house-sec .lnb-box, .in-house-sec .ihs-outer {float: left;}
+.in-house-sec .lnb-box {width: 274px;}
+.in-house-sec .ihs-outer {width: 790px; margin-left: 36px;}
+.lnb li a {display: block; padding-left: 20px; padding: 16px 0 16px 20px; line-height: 1.3em; width: 100%; background: #ebebeb; font-size: 18px; border: 1px solid #bfbfbf; border-bottom: 0;}
+.lnb li.last a {border-bottom: 1px solid #bfbfbf;}
+.lnb li.on a {background: #fff; color: #e9a105; border-color: #e9a105; border-bottom: 1px solid #e9a105;}
+.lnb li.on + li a {border-top: 0;}
+.in-house-sec .ihs-box {width: 100%; padding: 35px 35px; border-top: 1px solid #bfbfbf;}
+.ihs-box.nth-1 {}
+.ihs-box.nth-1 > h3 {font-size: 30px; margin-bottom: 40px; font-weight: 500;}
+.ihs-box.nth-1 > h3 span {display: block; font-size: 16px; margin-top: 10px; line-height: 1.3em;}
+.ih-prc-box {width: 720px; height: 404px; border: 1px solid #d2d2d2; margin-bottom: 30px;}
+.ihs-box.nth-1 .ihpb-u1 {position: relative;}
+.ihs-box.nth-1 .ihpb-l {float: left; width: 50%;}
+.ihs-box.nth-1 .ihpb-l h4 {height: 50px; text-align: center; color: #fff; background: #5F5F5F; font-size: 18px; line-height: 2.8em; letter-spacing: 0; margin-bottom: 16px;} 
+.ihs-box.nth-1 .ihpb-l.nth-1 {border-right: 1px solid #d2d2d2;}
+.ihs-box.nth-1 .ihpb-l div {padding: 10px 45px}
+.ihs-box.nth-1 .ihpb-l div p {font-size: 18px; line-height: 1.2em;}
+.ihs-box.nth-1 .ihpb-l div.last {padding-bottom: 22px;}
+.ihs-box.nth-1 .ihpb-p1 {text-align: center; padding-top: 25px; margin: 0 30px; border-top: 1px solid #d2d2d2; font-size: 26px;}
+.ihs-box.nth-1 .ihpb-p1 em {margin-left: 30px;}
+.ihs-box.nth-1 .ih-p1 {font-size: 22px; margin-bottom: 35px;}
+.ihs-box.nth-1 .ih-pwrap {}
+.ihs-box.nth-1 .ih-pwrap .btn {width: 348px; height: 57px; font-size: 24px; font-weight: 500; line-height: 2.35em; margin-bottom: 40px;}
+.ihs-box.nth-1 .ih-p2 {position: relative; padding-left: 10px; line-height: 1.35em; margin-top: 5px; color: #626262;}
+.ihs-box.nth-1 .ih-p2:before {position: absolute; left: 0; top: 0; display: inline-block; content: "·";}
+
+.ihs-box.nth-2 {}
+.ihs-box.nth-2 h4 {font-size: 22px;}
+.ihs-box.nth-2 h4 span {display: block; color: #626262; font-size: 16px; margin-top: 6px;}
+.ihs-box.nth-2 .ih-p1 {margin-top: 30px; font-size: 20px;}
+.ihs-box.nth-2 .ih-p2 {display: inline-block; font-size: 18px; text-align: center; background: #dcdcdc; margin-top: 10px; padding: 5px 15px;}
+
+.ihs-box.nth-3 {border-bottom: 1px solid #bfbfbf; margin-bottom: 100px;}
+.ihs-box.nth-3 h4 {font-size: 22px; margin-bottom: 30px;}
+.ihs-box.nth-3 h4 span {display: block; color: #626262; font-size: 16px; margin-top: 6px;}
+.ihs-box.nth-3 .ih-p1 {position: relative; font-size: 18px; margin-top: 5px; line-height: 1.3em; padding-left: 17px;}
+.ihs-box.nth-3 .ih-p1 span {position: absolute; left: 0;}
