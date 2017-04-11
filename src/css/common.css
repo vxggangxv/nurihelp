@@ -20,6 +20,7 @@ i {font-style: italic;}
 .c-white  {color: #fff;}
 .c-yellow {color: #ffb411;}
 .c-red {color: #db1010;}
+.c-red2 {color: #f62121;}
 
 /*폰트 굵기*/
 .f-semibold {font-weight: 500;}
@@ -54,6 +55,11 @@ canvas {
 .nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
 .nr-radio:checked, .nr-check:checked {background-color: #fff;}
 
+.txt-box {height:32px; padding:5px; border:1px solid #bfbfbf; background-color:#fff; color:#000; font-size:20px; appearance:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none;}
+.chk-box {position:relative;}
+.chk-box:before {content:''; display:block; position:absolute; left:0; top:0; width:11px; height:11px; border:1px solid #bfbfbf; background-color:#fff;}
+.chk-box.on:before {border-color:#000; background-color:#000;}
+
 /* 드롭다운박스 css */
 .dropdown {position: relative;}
 .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none; height: 100%;}
@@ -69,8 +75,8 @@ hr {border: none; border-top: 1px solid #ddd;}
 .wrap {position: relative; width: 100%; min-width: 1100px;}
 .header, .footer, .container, .contents, section {position: relative;}
 section {width: 100%;}
-section:before, section:after {content: ""; display: block;}
-section:after {clear: both;}
+.row:before, .row:after, section:before, section:after {content: ""; display: block;}
+.row:after, section:after {clear: both;}
 
 /*공통*/
 .mlr {display: inline-block;position: relative; width: 1px; height: 12px; background: #8f8f8f;}
@@ -131,14 +137,6 @@ section:after {clear: both;}
 .chk_box:before {content:''; display:block; position:absolute; left:0; top:0; width:11px; height:11px; border:1px solid #bfbfbf; background-color:#fff;}
 .chk_box.on:before {border-color:#000; background-color:#000;}
 
-/* 버튼 */
-.btn {display:inline-block; color:#fff; text-align:center; vertical-align:middle;}
-.btn.btn_type01 {width:354px; height:67px; background-color:#ffb412; font-weight:bold; font-size:30px; line-height:67px;}
-.btn.btn_type02 {height:32px; padding:0 20px; background-color:#ffb412; font-size:16px; line-height:32px;}
-.btn.btn_type03 {height:32px; padding:0 20px; background-color:#4d4d4d; font-size:16px; line-height:32px;}
-.btn.btn_type04 {width:76px; height:22px; border:1px solid #bfbfbf; color:#686868; line-height:18px;}
-.btn.btn_type05 {width:238px; height:43px; background-color:#141414; font-size:20px; line-height:43px;}
-.btn span {position:relative;}
 
 /* 레이어팝업 */
 .layer_pop {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:url('../img/pop_bg.png') repeat 0 0; font-size:0; text-align:center;}
@@ -158,3 +156,23 @@ section:after {clear: both;}
 .board_write tbody td .overlap {color:#000; font-size:14px; vertical-align:middle;}
 .board_write tbody td .agree {margin-top:8px;}
 .board_write tbody td .agree:first-child {margin-top:0;}
+.board_list {}
+.board_list thead th {padding:10px 5px; border-bottom:2px solid #979797; color:#010101; font-weight:bold;}
+.board_list tbody td {padding:15px 5px; border-bottom:1px solid #bfbfbf; color:#010101; text-align:center;}
+
+/* 컨텐츠영역 */
+.area {border-top:1px solid #dcdcdc; padding:55px 0 80px;}
+.area .tit {margin-bottom:55px; color:#000; font-weight:bold; font-size:44px; text-align:center;}
+.area .group {margin:0 auto;}
+.area .group .input_form form fieldset div {margin-top:10px; font-size:0;}
+.area .group .input_form form fieldset legend + div {margin-top:0;}
+.area .group .input_form label {display:inline-block; width:110px; color:#010101; font-size:20px; text-align:left;}
+.btn_area {margin-top:30px; text-align:center;}
+.btn_area .link_id {overflow:hidden; margin-top:10px;}
+.btn_area .link_id li {float:left; width:174px; margin-left:6px;}
+.btn_area .link_id li:first-child {margin-left:0;}
+.btn_area .link_id li a {display:block; position:relative; height:52px; padding-left:30px; color:#fff; font-weight:bold; font-size:18px; line-height:52px;}
+.btn_area .link_id li a.naver {background-color:#1ec700;}
+.btn_area .link_id li a.facebook {background-color:#3b5b9a;}
+.btn_area .link_id li a.naver:before {content:''; display:block; position:absolute; left:20px; top:50%; width:20px; height:17px; margin-top:-9px; background:url('../img/my_sprite_ico.png') no-repeat 0 0;}
+.btn_area .link_id li a.facebook:before {content:''; display:block; position:absolute; left:15px; top:50%; width:13px; height:23px; margin-top:-12px; background:url('../img/my_sprite_ico.png') no-repeat -20px 0;}

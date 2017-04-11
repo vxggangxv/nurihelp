@@ -83,7 +83,7 @@
 .ers-p1 .f-semibold, .ers-p1 .txt_box {vertical-align: middle;}
 .ers-p1, .ers-p2 {padding-left: 5px;}
 .ers-p1 {margin-bottom: 12px;}
-.ers-p1 .txt_box {width: 266px;}
+.ers-p1 .txt_box {width: 266px; font-size: 16px;}
 .ers-p2 {margin-bottom: 20px;}
 .ers-p2 .f-semibold, .ers-p2 .chk_box, .ers-p2 .chk_box + span {vertical-align: middle;}
 .ers-p1 .f-semibold, .ers-p2 .f-semibold {display: inline-block; width: 140px; font-size: 20px;}
