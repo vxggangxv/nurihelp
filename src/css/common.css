@@ -17,6 +17,7 @@ i {font-style: italic;}
 .bg-white {background-color: #fff;}
 .c-gray1 {color: #4c4c4c;}
 .c-gray2 {color: #656161;}
+.c-gray3 {color: #626262;}
 .c-white  {color: #fff;}
 .c-yellow {color: #ffb411;}
 .c-red {color: #db1010;}
@@ -47,18 +48,28 @@ canvas {
     -ms-user-select: none;
 }
 /* input태그 커스커마이징 */
-.nr-box {position: relative;}
+/*.nr-box {position: relative;}
 .nr-ph {display: none; position: absolute; top: 17px; left: 1px; text-indent: 15px; color: #999;}
 
 .nr-text, .nr-radio, .nr-button, .nr-reset, .nr-select, .nr-check { appearance: none;	-webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; background: #fff;}
 .nr-text + label, .nr-radio + label, .nr-check + label {vertical-align: middle; cursor: pointer;}
 .nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
-.nr-radio:checked, .nr-check:checked {background-color: #fff;}
+.nr-radio:checked, .nr-check:checked {background-color: #fff;}*/
 
 .txt-box {height:32px; padding:5px; border:1px solid #bfbfbf; background-color:#fff; color:#000; font-size:20px; appearance:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none;}
-.chk-box {position:relative;}
+.chk-box {position:relative; cursor: pointer;}
 .chk-box:before {content:''; display:block; position:absolute; left:0; top:0; width:11px; height:11px; border:1px solid #bfbfbf; background-color:#fff;}
 .chk-box.on:before {border-color:#000; background-color:#000;}
+.radio {position: relative; cursor: pointer; width:12px; height:12px;}
+.radio:before {content:''; display:block; position:absolute; left:0; top:0; width:12px; height:12px; border:1px solid #bfbfbf; background-color:#fff;}
+.radio.on:before {border-color:#000; background-color:#000;}
+
+/* 레이어팝업 */
+.layer-pop {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:url('../img/pop_bg.png') repeat 0 0; text-align:center;}
+.layer-pop:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.layer-pop .pop-area {display:inline-block; position:relative; padding: 54px 42px 22px; border:1px solid #bfbfbf; background-color:#fff; vertical-align:middle;}
+.layer-pop .pop-area .pop-close {position:absolute; right:11px; top:12px;}
+
 
 /* 드롭다운박스 css */
 .dropdown {position: relative;}
@@ -141,7 +152,7 @@ section {width: 100%;}
 /* 레이어팝업 */
 .layer_pop {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:url('../img/pop_bg.png') repeat 0 0; font-size:0; text-align:center;}
 .layer_pop:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
-.layer_pop .pop_area {display:inline-block; position:relative; padding:55px 45px 50px; border:1px solid #bfbfbf; background-color:#fff; vertical-align:middle;}
+.layer_pop .pop_area {display:inline-block; position:relative; padding:55px 45px 20px; border:1px solid #bfbfbf; background-color:#fff; vertical-align:middle;}
 .layer_pop .pop_area .pop_tit {display:inline-block; padding-bottom:20px; color:#000; font-weight:bold; font-size:20px;}
 .layer_pop .pop_area .pop_txt {color:#595959; font-size:18px;}
 .layer_pop .pop_area .pop_close {position:absolute; right:10px; top:10px;}

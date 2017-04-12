@@ -7,9 +7,16 @@ $(function () {
       $(this).removeClass('on');
     }
   });
+  /*라이도박스*/
+  $('.radio').click(function () {
+    $(this).prop('checked', true).addClass("on").siblings().removeClass("on");
+  });
   /*레이어팝업 닫기*/
   $('.layer_pop .pop_area .pop_close').click(function () {
     $(this).parents('.layer_pop').hide();
+  });
+  $('.layer-pop .pop-area .pop-close').click(function () {
+    $(this).parents('.layer-pop').hide();
   });
   /*구매내역 탭메뉴*/
   $('.mypage .buy_list h5').click(function () {

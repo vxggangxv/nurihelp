@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body {background: #F0F0F0; width: 100%; height: 100%;}
+.wrap {position: relative; width: 1100px; margin: 0 auto; background: #fff; padding-top: 56px; padding-bottom: 50px;}
+
+/*테스트 공통*/
+.btn-wrap {text-align: center; margin-top: 32px;}
+.btn-wrap .btn {display: inline-block; width: 235px; height: 65px; font-size: 26px; font-weight: 500; line-height: 2.5em; text-align: center;}
+.test-box {position: relative; width: 1011px; margin: 0 auto; border: 1px solid #bfbfbf;}
+
+/*네비게이션*/
+.test-nav-bar {width: 633px; height: 78px; margin: 0 auto;}
+
+/*테스트01*/
+.test01-1-sec {}
+.test01-1-sec .test01-icon {text-align: center; margin-top: 100px;}
+.test01-1-sec h2 {font-size: 44px; padding-top: 30px; padding-bottom: 45px; font-weight: 600; text-align: center;}
+.test01-1-sec p {text-align: center; font-size: 22px; line-height: 1.45em; margin-bottom: 95px;}
+.test01-1-sec .btn-wrap {}
+.test01-1-sec .btn-wrap .btn.nth-1 {border: 1px solid #ffb411;}
+.test01-1-sec .btn-wrap .btn.nth-2 {margin-left: 15px;}
+
+/*테스트02*/
+.test01-2-sec {}
+.test01-2-sec h2 {font-size: 34px; padding-top: 60px; padding-bottom: 50px; font-weight: 600; text-align: center;}
+.test01-2-sec .test-box {padding: 25px 54px 10px;}
+.test-box .row {margin-top: 25px;}
+.test-box .row.nth-1 {margin-top: 0;}
+.test-box .row.nth-2 {margin-top: 10px;}
+.test-box .row p {display: inline-block; font-size: 18px; line-height: 1.2em; vertical-align: top;}
+.test-box .row:first-child p {vertical-align: bottom;}
+.test-box .row p.nth-1 {position: relative; padding-left: 18px; width: 765px; margin-right: 15px;}
+.test-box .row p.nth-1:before {position: absolute; content: "Q"; left: 0; color: #ffb411; font-weight: 600;}
+.test-box .row:first-child p.nth-1:before {display: none;}
+.test-box .row p.nth-2 span {display: inline-block;}
+.test-box .row p.nth-2 span.yes {margin-right: 50px;}
+.test-box .row p.nth-2 span.no {}
+.test-box .row p.nth-2 .radio {top: -3px;}
+.test-box .row p.nth-2 .radio:first-child {margin-right: 69px;}
+.caution-p {padding: 20px 36px; color: #626262; background: #E6E6E6; line-height: 1.7em; margin-top: 32px;}
+.caution-p  span {position: relative; top: -3px; font-size: 10px; margin-right: 5px;}
+.step-s {margin-top: 30px; text-align: center;}
+.step-s span {display: inline-block; width: 14px; height: 14px; border-radius: 50%; margin-left: 5px; margin-right: 5px; background: #bfbfbf;}
+.step-s span.on {background: #ffb411;}
+
+/*테스트03*/
+.test-box .row p span.c-gray3 {display: block; line-height: 1.45em; font-size: 16px; margin-top: 10px;}
+
+/*테스트04*/
+.layer-pop .pop-area .pop-tit {display:inline-block; margin-bottom:20px; color:#000; font-weight: 500; font-size: 28px;}
+.layer-pop .pop-area .pop-txt {color:#595959; font-size:18px; line-height: 1.4em;}
+.layer-pop .pop-area .btn-wrap {margin-top: 25px; margin-bottom: 3px;}
+.layer-pop .pop-area .btn-wrap .btn {display: block; width: 400px; height: 54px; color: #fff; font-size: 26px; font-weight: 600; line-height: 2em; letter-spacing: 0;}
