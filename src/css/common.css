@@ -24,7 +24,7 @@ i {font-style: italic;}
 .c-red2 {color: #f62121;}
 
 /*폰트 굵기*/
-.f-semibold {font-weight: 500;}
+.f-semibold, .f-smbold {font-weight: 500;}
 .f-bold {font-weight: 600;}
 .f-italic {font-style: italic;}
 
