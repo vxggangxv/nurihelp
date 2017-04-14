@@ -195,7 +195,7 @@ label {cursor: pointer;}
 .test03-1-sec .outer.nth-3 .chk-wrap:first-child {margin-top: 0;}
 .test03-1-sec .outer.nth-3 .chk-box {top: 1px; margin-right: 6px;}
 .test03-1-sec .outer.nth-3 .chk-box:before {border-color: #000;}
-.test03-1-sec .outer.nth-3 .btn {position: relative; color: #4b4b4b; display: inline-block; top: 1px; font-size: 14px; padding: 0px 8px 0px; height: 21px; line-height: 1.3em; border: 1px solid #bfbfbf; margin-left: 8px; vertical-align: middle;}
+.test03-1-sec .outer.nth-3 .btn {position: relative; color: #4b4b4b; display: inline-block; top: 1px; font-size: 14px; padding: 0px 8px 0px; height: 20px; line-height: 1.4em; border: 1px solid #bfbfbf; margin-left: 8px; vertical-align: middle; font-family: "Nanum Gothic";}
 .test03-1-sec .outer.nth-3 .btn span {font-family: "Nanum Gothic"; font-size: 10px; position: relative; top: -2.5px; margin-left: 3px; font-weight: 600;}
 .test03-1-sec .outer.nth-3 #chk-all + label {font-weight: 500;}
 .test03-1-sec .outer.nth-4 > ul li {margin-top: 16px;}
@@ -204,8 +204,8 @@ label {cursor: pointer;}
 .test03-1-sec .outer.nth-4 > ul li.nth-1 span.nth-1, .test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-1 {font-size: 20px; width: 105px;}
 .test03-1-sec .outer.nth-4 > ul li.nth-1 .btn {display: inline-block; width: 72px; height: 24px; line-height: 1.4em; vertical-align: middle;}
 .test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-2, .test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-3 {font-size: 16px;}
-.test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-2 .won {position: relative; top: -2px; margin-right: 3px;width: 12px; height: 12px; border: 1px solid #000;}
-.test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-3 {color: #989898; top: -1px; margin-left: 6px;}
+.test03-1-sec .outer.nth-4 > ul li.nth-2 span.won {position: relative; top: 1px; margin-right: 4px; font-size: 16px; font-family: "Nanum Gothic"; font-weight: 600;}
+.test03-1-sec .outer.nth-4 > ul li.nth-2 span.nth-3 {color: #989898; margin-left: 6px;}
 .test03-1-sec .outer.nth-4 > ul li.nth-3 .box {position: relative; width: 988px; height: 140px; padding: 30px 48px; border: 2px solid #000; left: -18px; margin-top: 24px;}
 .test03-1-sec .outer.nth-4 > ul li.nth-3 .box [class*='row'] p {position: relative; display: inline-block;}
 .test03-1-sec .outer.nth-4 > ul li.nth-3 .box [class*='row'] .p1 {width: 26%;}

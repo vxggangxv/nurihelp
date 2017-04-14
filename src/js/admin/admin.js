@@ -1,6 +1,6 @@
 $(function() {
   //공지사항 리스트 페이지번호
-  $("#pagenation a").on("click", function() {
+  $("#pagenation_1 a, #pagenation_2 a").on("click", function() {
     var idx = $(this).index();
     var lastIdx = $(this).closest("div").find("a").length;
     lastIdx -- ;

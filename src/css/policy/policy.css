@@ -19,6 +19,6 @@
 .policy h3.on {z-index:100; border:1px solid #e9a105; background-color:#fff; color:#e9a105;}
 .policy div {display:none; overflow:auto; height:565px; padding:30px 20px; border:1px solid #bfbfbf; font-size:14px; line-height:1.5;}
 .policy div.on {display:block;}
-.policy div strong {display:block; margin-top:25px;}
+.policy div strong {display:block; margin-top:25px; font-weight: 600;}
 .policy div strong.first {margin-top:0;}
 .policy div ol li ol, .policy div ol li ul {padding-left:15px;}
