@@ -41,21 +41,15 @@ i {font-style: italic;}
 .clearfix:before, .clearfix:after {display: block; content: "";}
 .clearfix:after {clear: both;}
 
-/* 캔버스 커스타미이징 */
-canvas {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
+/*세로정렬*/
+.vm {position: relative; padding-top: 4px;}
+.vm:after {content: ""; display: inline-block; height: 100%; vertical-align: middle;}
+
+/*문단 특수문자정렬*/
+.p-dot {position: relative; padding-left: 10px;}
+.p-dot:before {content: ""; display: inline-block; position: absolute; left: 0; top: 0;}
+
 /* input태그 커스커마이징 */
-/*.nr-box {position: relative;}
-.nr-ph {display: none; position: absolute; top: 17px; left: 1px; text-indent: 15px; color: #999;}
-
-.nr-text, .nr-radio, .nr-button, .nr-reset, .nr-select, .nr-check { appearance: none;	-webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; background: #fff;}
-.nr-text + label, .nr-radio + label, .nr-check + label {vertical-align: middle; cursor: pointer;}
-.nr-text, .nr-radio, .nr-check {border: 1px solid #ddd; outline: none; cursor: pointer;}
-.nr-radio:checked, .nr-check:checked {background-color: #fff;}*/
-
 .txt-box {height:32px; padding:5px; border:1px solid #bfbfbf; background-color:#fff; color:#000; font-size:20px; appearance:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none;}
 .chk-box {position:relative; cursor: pointer;}
 .chk-box:before {content:''; display:block; position:absolute; left:0; top:0; width:11px; height:11px; border:1px solid #bfbfbf; background-color:#fff;}
